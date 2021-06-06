@@ -1,18 +1,22 @@
 import Head from 'next/head';
 import Link from 'next/Link';
+import Layout from '../components/layout';
 import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="container">
+    <Layout>
       <Head>
         <title>Rufus the Cat</title>
       </Head>
 
       <main>
-        <h1 className="title">
-          Read{' '}<Link href="./posts/my-skills-hobbies"><a>this page</a></Link>
-        </h1>
+        <h1 className="title">Rufus the Bold, Cat Extraordinaire</h1>
+        <p>Rufus is a lovable and affectionate sweetheart who purrs at every opportunity and is big time into cuddling on the sofa and belly rubs. His human is decently-trained and has spent her free time creating this mini-website for him.</p>
+        <p>If you love playing with bouncy balls, blocking TV screens & computer monitors, sitting on your human's laptops and chasing strings, you'll be in good company!</p>
+        <p>PS. Rufus is also <a href="https://twitter.com/anniebombanie_/status/1400135526494224385?s=20" target="_blank" rel="noopener noreferrer">very good at JavaScript!</a></p>
+        <h2>Blog</h2>
+        <Link href="./posts/my-skills-hobbies"><a>My Skills and Hobbies</a></Link>
 
       </main>
 
@@ -171,6 +175,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </Layout>
   )
 }
