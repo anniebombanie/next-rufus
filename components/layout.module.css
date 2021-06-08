@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.main {
+  text-align: left;
+}
+
 .backToHome {
   margin: 3rem 0 0;
 }

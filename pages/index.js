@@ -2,35 +2,81 @@ import Head from 'next/head';
 import Link from 'next/Link';
 import Layout from '../components/layout';
 import Image from 'next/image';
+import { getSortedPostsData } from '../lib/posts';
+import utilStyles from '../styles/utils.module.css';
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function Home({ allPostsData }) {
   return (
-    <Layout>
+    <Layout home>
       <Head>
-        <title>Rufus the Cat</title>
+        <title>Rufus the Cat, Cat Extraordinaire</title>
       </Head>
 
       <main>
-        <h1 className="title">Rufus the Bold, Cat Extraordinaire</h1>
-        <p>Rufus is a lovable and affectionate sweetheart who purrs at every opportunity and is big time into cuddling on the sofa and belly rubs. His human is decently-trained and has spent her free time creating this mini-website for him.</p>
-        <p>If you love playing with bouncy balls, blocking TV screens & computer monitors, sitting on your human's laptops and chasing strings, you'll be in good company!</p>
-        <p>PS. Rufus is also <a href="https://twitter.com/anniebombanie_/status/1400135526494224385?s=20" target="_blank" rel="noopener noreferrer">very good at JavaScript!</a></p>
-        <h2>Blog</h2>
-        <Link href="./posts/my-skills-hobbies"><a>My Skills and Hobbies</a></Link>
-
-      </main>
-
-      <footer>
+        <h1 className="title">The best cat in the world</h1>
+        <p>
+          Rufus is a lovable and affectionate sweetheart who purrs at every
+          opportunity and is big time into cuddling on the sofa and belly rubs.
+          His human is decently-trained and has spent her free time creating
+          this mini-website for him.
+        </p>
+        <p>
+          If you love playing with bouncy balls, blocking TV screens & computer
+          monitors, sitting on your human's laptops and chasing strings, you'll
+          be in good company!
+        </p>
+        <p>PS. Rufus is also very good at JavaScript!</p>
         <a
-          href="https://www.anniebombanie.com"
+          href="https://twitter.com/anniebombanie_/status/1400135526494224385?s=20"
           target="_blank"
           rel="noopener noreferrer"
         >
-          This mini-site was created by Annie 🦄⚡
+          <Image
+            src="/imgs/rufus-js.jpg"
+            height={144}
+            width={144}
+            alt="Rufus looking at JS for cats website"
+          />
         </a>
+        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+          <h2 className={utilStyles.headingLg}>Blog</h2>
+          <ul className={utilStyles.list}>
+            {allPostsData.map(({ id, date, title }) => (
+              <li className={utilStyles.listItem} key={id}>
+                {title}
+                <br />
+                {id}
+                <br />
+                {date}
+              </li>
+            ))}
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          This mini-site was created by{' '}
+          <a
+            href="https://www.anniebombanie.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Annie 🦄⚡
+          </a>
+        </p>
       </footer>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -174,7 +220,7 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-      `}</style>
+      `}</style> */}
     </Layout>
-  )
+  );
 }
