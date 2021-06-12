@@ -22,8 +22,7 @@ jobs:
       - name: Install and Build 🔧
         uses: actions/setup-node@v1
       - run: npm install
-      - run: npm run build # runs `next build`
-      - run: npm run export # runs `next export`
+      - run: npm run build
         env:
           CI: false
 
