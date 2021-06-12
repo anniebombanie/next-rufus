@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/Link';
 import Layout from '../components/layout';
 import Image from 'next/image';
 import { getSortedPostsData } from '../lib/posts';
