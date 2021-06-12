@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
-import Image from 'next/image';
 import { getSortedPostsData } from '../lib/posts';
 import utilStyles from '../styles/utils.module.css';
 
@@ -39,10 +38,10 @@ export default function Home({ allPostsData }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             src="/imgs/rufus-js.jpg"
-            height={144}
-            width={144}
+            height="144px"
+            width="144px"
             alt="Rufus looking at JS for cats website"
           />
         </a>
