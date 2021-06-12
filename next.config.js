@@ -1,6 +1,6 @@
 const ghPages = process.env.DEPLOY_TARGET === 'gh-pages';
 
 module.exports = {
-  // Use the CDN in production and localhost for development.
+  // In production (gh-pages), static assets point to <username>.github.io/<projectname>
   assetPrefix: ghPages ? '/anniebombanie.github.io/' : ''
 };
