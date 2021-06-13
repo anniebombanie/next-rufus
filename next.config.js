@@ -1,4 +1,7 @@
+const ghPages = process.env.NODE_ENV === 'production';
+
 module.exports = {
-    basePath: process.env.NEXT_PUBLIC_BASE_PATH,
-    assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH
-}
+  basePath: ghPages ?  '/next-rufus' : '',
+  // In production (gh-pages), static assets point to <username>.github.io/<projectname>
+  assetPrefix: ghPages ? 'https://anniebombanie.github.io/next-rufus/' : ''
+};
