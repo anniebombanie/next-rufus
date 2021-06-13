@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { prefix } from '../utils/prefix.js';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
@@ -21,7 +22,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/imgs/rufus-profile.jpg"
+              src={`${prefix}/imgs/rufus-profile.jpg`}
               className={utilStyles.borderCircle}
               height="144px"
               width="144px"
