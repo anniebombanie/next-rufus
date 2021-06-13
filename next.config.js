@@ -4,5 +4,5 @@ const basePath = ghPages ? '/next-rufus' : '';
 module.exports = {
   basePath,
   // In production (gh-pages), static assets point to <username>.github.io/<projectname>
-  assetPrefix: ghPages ? 'https://anniebombanie.github.io/next-rufus/' : ''
+  assetPrefix: ghPages ? 'anniebombanie.github.io/next-rufus/' : ''
 };
