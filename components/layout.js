@@ -4,6 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
 const name = "Rufus the Bold"
+const logo = require('/imgs/rufus-profile.jpg');
 export const siteTitle = "Rufus the Bold"
 
 export default function Layout({ children, home }) {
@@ -21,7 +22,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src='/imgs/rufus-profile.jpg'
+              src={logo}
               className={utilStyles.borderCircle}
               height="144px"
               width="144px"
