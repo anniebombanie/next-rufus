@@ -1,4 +1,4 @@
-const ghPages = process.env.DEPLOY_TARGET === 'gh-pages';
+const ghPages = process.env.NODE_ENV === 'gh-pages';
 
 module.exports = {
   basePath: '/next-rufus',
