@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { prefix } from '../utils/prefix.js';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
