@@ -5,7 +5,6 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
 const name = "Rufus the Bold"
-// const logo = './public/imgs/rufus-profile.jpg';
 export const siteTitle = "Rufus the Bold"
 
 export default function Layout({ children, home }) {

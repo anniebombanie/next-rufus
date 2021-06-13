@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
+import { prefix } from '../utils/prefix';
 import utilStyles from '../styles/utils.module.css';
 
 export async function getStaticProps() {
@@ -37,7 +38,7 @@ export default function Home({ allPostsData }) {
           rel="noopener noreferrer"
         >
           <img
-            src="/imgs/rufus-js.jpg"
+            src={`${prefix}/imgs/rufus-js.jpg`}
             height="144px"
             width="144px"
             alt="Rufus looking at JS for cats website"
