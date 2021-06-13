@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
           rel="noopener noreferrer"
         >
           <img
-            src="./imgs/rufus-js.jpg"
+            src="/imgs/rufus-js.jpg"
             height="144px"
             width="144px"
             alt="Rufus looking at JS for cats website"

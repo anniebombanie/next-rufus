@@ -21,7 +21,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="./imgs/rufus-profile.jpg"
+              src="/imgs/rufus-profile.jpg"
               className={utilStyles.borderCircle}
               height="144px"
               width="144px"
@@ -35,7 +35,7 @@ export default function Layout({ children, home }) {
               <a>
                 <img
                   priority
-                  src="./imgs/rufus-profile.jpg"
+                  src="/imgs/rufus-profile.jpg"
                   className={utilStyles.borderCircle}
                   height="108px"
                   width="108px"
