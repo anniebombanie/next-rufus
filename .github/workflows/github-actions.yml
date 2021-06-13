@@ -26,6 +26,7 @@ jobs:
       - run: npm run export # runs `next export`
         env:
           CI: false
+          NEXT_PUBLIC_BASE_PATH: /next-rufus
 
       - name: Deploy 🚀
         if: github.ref == 'refs/heads/main'

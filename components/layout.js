@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { prefix } from '../utils/prefix';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
 const name = "Rufus the Bold"
-const logo = require('/imgs/rufus-profile.jpg');
+// const logo = './public/imgs/rufus-profile.jpg';
 export const siteTitle = "Rufus the Bold"
 
 export default function Layout({ children, home }) {
@@ -22,7 +23,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src={logo}
+              src={`${prefix}/imgs/rufus-profile.jpg`}
               className={utilStyles.borderCircle}
               height="144px"
               width="144px"
@@ -36,7 +37,7 @@ export default function Layout({ children, home }) {
               <a>
                 <img
                   priority
-                  src="/imgs/rufus-profile.jpg"
+                  src={`${prefix}/imgs/rufus-profile.jpg`}
                   className={utilStyles.borderCircle}
                   height="108px"
                   width="108px"
