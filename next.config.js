@@ -9,5 +9,6 @@
 // };
 
 module.exports = {
-  assetPrefix: '/next-rufus/',
+  basePath: '/next-rufus',
+  assetPrefix: '/next-rufus/'
 }
