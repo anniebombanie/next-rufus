@@ -26,8 +26,6 @@ jobs:
       - run: npm run export # runs `next export`
         env:
           CI: false
-          # DEPLOY_TARGET: gh-pages
-      - run: touch out/.nojekyll
 
       - name: Deploy 🚀
         if: github.ref == 'refs/heads/main'
