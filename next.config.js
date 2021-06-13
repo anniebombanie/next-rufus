@@ -2,6 +2,6 @@
 // const basePath = ghPages ? '/next-rufus' : '';
 
 module.exports = {
-  basePath: '/anniebombanie.github.io/next-rufus',
-  assetPrefix: '/anniebombanie.github.io/next-rufus/'
+  basePath: '/anniebombanie.github.io',
+  assetPrefix: '/anniebombanie.github.io/'
 };
