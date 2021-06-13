@@ -24,8 +24,6 @@ export default function Home({ allPostsData }) {
         <p>
           Rufus is a lovable and affectionate sweetheart who purrs at every
           opportunity and is big time into cuddling on the sofa and belly rubs.
-          His human is decently-trained and has spent her free time creating
-          this mini-website for him.
         </p>
         <p>
           If you love playing with bouncy balls, blocking TV screens & computer
