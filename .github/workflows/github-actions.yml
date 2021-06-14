@@ -28,6 +28,7 @@ jobs:
       - run: npm run export # runs `next export`
         env:
           CI: false
+      - run: touch out/.nojekyll # add .nojekyll file for GH-pages bug
 
       - name: Deploy 🚀
         if: github.ref == 'refs/heads/main'
