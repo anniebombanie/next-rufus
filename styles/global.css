@@ -21,6 +21,10 @@ a:hover {
   text-decoration: underline;
 }
 
+h2 {
+  font-size: 1.15em;
+}
+
 img {
   max-width: 100%;
   display: block;

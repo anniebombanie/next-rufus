@@ -1,6 +1,6 @@
 ---
 title: "Rufus' Skills & Hobbies"
-date: '2020-01-01'
+date: '2019-06-12'
 ---
 
 # My Skills & Hobbies

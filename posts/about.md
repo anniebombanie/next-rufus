@@ -1,6 +1,6 @@
 ---
 title: 'About Rufus'
-date: '2020-01-01'
+date: '2019-04-01'
 ---
 
 # Some Facts About Lil Rufus
