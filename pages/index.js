@@ -41,8 +41,8 @@ export default function Home({ allPostsData }) {
         >
           <img
             src={`${prefix}/imgs/rufus-js.jpg`}
-            height="144px"
-            width="144px"
+            height="150px"
+            width="150px"
             alt="Rufus looking at JS for cats website"
           />
         </a>
