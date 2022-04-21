@@ -3,7 +3,7 @@ title: 'Rufus and his Bear'
 date: '2022-04-21'
 ---
 
-![Rufus in a basket with his bear](/imgs/rufus-bear.jpg)
+![Rufus in a basket with his bear](`${prefix}/imgs/rufus-bear.jpg`)
 
 # Rufus and his Bear
 
