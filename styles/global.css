@@ -7,29 +7,23 @@ body {
   line-height: 1.6;
   font-size: 18px;
 }
-
 * {
   box-sizing: border-box;
 }
-
 a {
   color: #0070f3;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
-
 h2 {
   font-size: 1.15em;
 }
-
 img {
   max-width: 100%;
   display: block;
 }
-
 footer {
   width: 100%;
   height: 100px;
