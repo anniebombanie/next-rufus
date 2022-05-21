@@ -1,4 +1,4 @@
-This mini-site was used in Codementor's Developer Growth Summit talk, "Using GitHub to Power Up Your Static Sites".
+This mini-site was used in _Codementor's Developer Growth Summit_ talk, "Using GitHub to Power Up Your Static Sites".
 
 **Watch this talk here:** https://www.youtube.com/watch?v=oByIcpWPD3Y&t=2s
 
