@@ -11,7 +11,7 @@ This mini-site, made in Next.js was used in _Codementor's Developer Growth Summi
 What’s the best way to build and maintain a website? In this talk, we’ll explore static and dynamic sites. Then we’ll dive into deploying static sites and automating your workflow with GitHub Pages and Actions.
 
 This talk will cover:
-Static vs. dynamic sites
-Technical differences of CSR/SSR and SSG
-Configuring your YAML file
-Deploying a Next.js site onto GitHub Pages using GitHub Actions
+- Static vs. dynamic sites
+- Technical differences of CSR/SSR and SSG
+- Configuring your YAML file
+- Deploying a Next.js site onto GitHub Pages using GitHub Actions
