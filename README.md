@@ -1,4 +1,4 @@
-# Blog Site Featuring Rufus The Cat 🐱
+# Blog Site featuring Rufus The Cat 🐱
 
 This mini-site, made in Next.js was used in _Codementor's Developer Growth Summit 2022_ talk, "Using GitHub to Power Up Your Static Sites".
 
