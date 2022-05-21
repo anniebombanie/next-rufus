@@ -1,4 +1,6 @@
-This mini-site was used in _Codementor's Developer Growth Summit_ talk, "Using GitHub to Power Up Your Static Sites".
+# Blog Site Featuring Rufus The Cat 🐱
+
+This mini-site, made in Next.js was used in _Codementor's Developer Growth Summit 2022_ talk, "Using GitHub to Power Up Your Static Sites".
 
 **Watch this talk here:** https://www.youtube.com/watch?v=oByIcpWPD3Y&t=2s
 
